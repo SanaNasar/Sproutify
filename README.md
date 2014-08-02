@@ -8,4 +8,4 @@ Sproutify
 * Users can also search for recipies using a specific key word.
 * To blog their own recepies and have a personalized list of favorite recepies. Users need to:
 * Signup (Create an account) and
-* Login to view the posted recepies.
+* Login- to view their posted recepies.
