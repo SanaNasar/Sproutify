@@ -6,8 +6,6 @@ Recipology
 
 * Users can view a list of organic and inorganic fruits vegetables.
 * Users can also search for recipies using a specific key word.
-* However, users need to:
-* Signup (Create an account)
+* However, to blog their own recepies and have a personalized list of favorite recepies. Users need to:
+* Signup (Create an account) and
 * Login
-* To blog their own homemade recepies
-* Have a personalized list of their favorites.
