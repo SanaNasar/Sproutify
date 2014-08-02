@@ -1,4 +1,4 @@
-Recipology
+Sproutify
 ==========
  
  An organic food buddy which gives information about all the fruits, vegerables and the pesticides content in them. 
@@ -6,6 +6,6 @@ Recipology
 
 * Users can view a list of organic and inorganic fruits vegetables.
 * Users can also search for recipies using a specific key word.
-* However, to blog their own recepies and have a personalized list of favorite recepies. Users need to:
+* To blog their own recepies and have a personalized list of favorite recepies. Users need to:
 * Signup (Create an account) and
-* Login
+* Login to view the posted recepies.
