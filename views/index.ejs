@@ -1,0 +1,29 @@
+<html>
+<head>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+	<title></title>
+</head>
+<body>
+	<h1> Welcome to our Sproutify Blog Post: </h1>
+	<form action="/posts">
+	<ul>
+    <% posts.forEach(function (post) { %>
+      <li> <%= post.title%> </li>
+      <li> <%= post.body%> </li>
+      <li> <%= post.updatedAt%> </li>
+    <% }) %>
+    </ul>
+
+ 	<div>
+		<a href="home" class="btn btn-success">Go Home</a>
+	</div>
+  </form>
+
+</body>
+</html>

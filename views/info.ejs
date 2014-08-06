@@ -1,0 +1,78 @@
+<!-- //Individual recipe page -->
+<!doctype html>
+<html>
+  <head>
+    <title>Recipe Search Results</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+      background: url();
+    }
+    h2 {
+      text-align: center;
+      padding-top: 20px;
+      font-family: arial;
+    }
+    h3 {
+      text-align: center;
+    }
+    #ingredients {
+      text-align: center;
+      font-family: arial;
+    }
+    .row {
+      text-align: center;
+      font-style: italic;
+      font-family: arial;
+      padding-left: 300px;
+    }
+    img {
+      text-align: center;
+       width: 400px; height: 200px; border:2px solid #fff;
+        box-shadow: 10px 10px 5px #ccc; -moz-box-shadow: 10px 10px 5px #ccc; -webkit-box-shadow: 10px 10px 5px #ccc; -khtml-box-shadow: 10px 10px 5px #ccc;
+    }
+    a:hover
+      {
+        text-align: center;
+      }
+    form {
+      text-align: center;
+      color: green;
+    }
+    </style>
+  </head>
+  <body>
+    <h2>Recipe info page!</h2>
+    <h3><%= stuff.name %></h3>
+    <img src="<%= stuff.images[0].hostedMediumUrl %>">
+    
+    <h3><strong>Ingredients</strong></h3>
+    <div id="ingredients">
+    <% stuff.ingredientLines.forEach(function(line){ %> 
+       <div id="ingredient">
+        <%= line %>
+      </div>
+    <% }) %>
+    </div>
+
+  <a href="<%= stuff.source.sourceRecipeUrl %>">See Original Link For Details...</a>
+    <h3>Nutrition Info</h3>
+   
+      <% stuff.nutritionEstimates.forEach(function(recipe) { %>
+       <div class="row">
+      <p>
+        <div class="col-xs-3"><%= recipe.attribute %></div>
+        <div class="col-xs-3"><%= recipe.description %></div>
+      </p>
+    </div>
+  <% }) %>
+  
+    <form method="post" action="/">
+      <input type="hidden" name="recipe" value="">
+      <input type="hidden" name="link" value="">
+      <input type ="submit" value = "Save it to my list!">
+    </form>
+      
+
+</body>
+</html>

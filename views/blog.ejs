@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Recipe Blog</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+</head>
+<style>
+h2 {
+  text-align: center;
+  color: black;
+  font-family: Lucida;
+  font-style: italic;
+}
+.button {
+ position: center;
+}
+body {
+background-image: url(http://www.food-worlds.com/wp-content/gallery/sprouts/snow-pea-sprouts-dou-miao-pea-shoots.jpg);
+}
+textarea {
+  position: center;
+}
+</style>
+<body>
+  <h2>Add a new recipie</h2>
+ <form method="post" action="/blog">
+    <p>
+      <input type="text" class = "form-control" name="username" placeholder="Enter your name" autofocus>
+    </p>
+    <p>
+      <input type="text" class = "form-control" name="pass" placeholder="Username">
+    </p>
+    <p>
+      <input type="text" class = "form-control"  name="post[title]" placeholder="Enter a recipe title">
+    </p>
+  <p>
+      <textarea name="post[body]" rows="10" cols="50">Enter your masterpiece</textarea>
+  </p>
+  <p>
+    <input class="btn btn-primary" type="submit" value="Post">
+  </p>
+</form>
+</body>
+</html>
