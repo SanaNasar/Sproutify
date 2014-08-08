@@ -1,14 +1,4 @@
-<html>
-<head>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-
-	<meta charset="UTF-8">
-	<title>Apples</title>
-</head>
+<% include partials/header %>
 <style>
 h1 {
 color: red;
@@ -22,26 +12,42 @@ article {
 	float: right;
 }
 body {
-	background-color: lightgreen;
+	background-color: #89C4F4;
 }
 </style>
 <body>
-<ul class="nav nav-pills">
+<div class="container">
+<div class="row">
+<ul class="nav nav-pills col-xs-offset-2">
   <li class="active"><a href="home">Home</a></li>
-  <li><a href="recipe">Recipes</a></li>
-  <li><a href="guide">Guide</a></li>
+  <li class="active"><a href="recipe">Recipes</a></li>
+  <li class="active"><a href="guide">Guide</a></li>
 </ul>
-<h1><u>Apricots</u></h1>
-<p><img src="http://www.fruitsandveggiesmorematters.org/wp-content/uploads/UserFiles/Image/cooking/good/nutrition/fvdb/Apricots.jpg">
-<img src="http://www.fruitsandveggiesmorematters.org/wp-content/uploads/UserFiles/Image/cooking/good/nutrition/fvdb/labels/Nutrition_Facts_Apricot.jpg">
-</p>
+<h1 class="col-xs-8 col-xs-offset-2"><u>Apricots</u></h1>
+<div class="col-xs-offset-2 col-xs-6  col-sm-4 col-md-6">
+<p <div class="col-xs-offset-2 col-xs-6  col-sm-4 col-md-6">
+  	<div class="col-xs-offset-2 col-xs-6  col-sm-4 col-md-6">
+  	<div class="row">
+  		<p class="col-xs-12 col-md-6">
+  		<img src="http://www.fruitsandveggiesmorematters.org/wp-content/uploads/UserFiles/Image/cooking/good/nutrition/fvdb/Apricots.jpg">
+  	</p>s
+  	<p class="col-xs-12 col-md-6">
+		<img src="http://www.fruitsandveggiesmorematters.org/wp-content/uploads/UserFiles/Image/cooking/good/nutrition/fvdb/labels/Nutrition_Facts_Apricot.jpg">
+		</p>
+	</div>
+</div>
 
-<article>
-   <p><a href="http://www.wholefoodsmarket.com/"><u><strong>Buy Organic:</a></strong></u>
-   	<p>Reasearch shows that of any food, apricots pocess the highest levels and widestest variety of carotenoids.<a href="http://en.wikipedia.org/wiki/Carotenoid">Caretenoids</a>are antioxidants that help prevent heart disease, reduce bad cholestrol levels and protect against cancer. However, many pesticides are used on apricots.</p>
+  <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-3">
+  	<article>
+   <p  class= "text-info"><a href="http://www.wholefoodsmarket.com/"><u><strong>Buy Organic:</a></strong></u>
+   	<p  class= "text-info">Reasearch shows that of any food, apricots pocess the highest levels and widestest variety of carotenoids.<a href="http://en.wikipedia.org/wiki/Carotenoid">Caretenoids</a>are antioxidants that help prevent heart disease, reduce bad cholestrol levels and protect against cancer. However, many pesticides are used on apricots.</p>
    <!-- aside inside article -->
-   <aside><strong>Prep:</strong>Wash the apricot under cool running water, scrubbing the skin gently.</p>
+    <p class= "text-info">
+    	<aside><strong>Prep:</strong>Wash the apricot under cool running water, scrubbing the skin gently.</p>
    </aside>
 </article>
+ </div>
+</div>
+</div>
 </body>
 </html>

@@ -114,11 +114,13 @@ app.get('/search/:id', function(req, res){
 //   res.render('myfav', {savedList: []});
 // });
 
-
-
 //Directs to the apple page
 app.get("/apple", function(req, res){
   res.render('apple');
+});
+//Directs to the apricots page
+app.get("/apricot", function(req, res){
+  res.render('apricot');
 });
 //Directs to the bannana page
 app.get("/bannana", function(req, res){
