@@ -4,33 +4,45 @@
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-
+	  <link rel="stylesheet" href="stylesheets/blog_style.css">
 	<meta charset="UTF-8">
 	<title>Recipe Search</title>
+	<style>
+	.checkbox {
+		float: left;
+	}
+	</style>
 </head>
 <body>
-	<h1>Login </h1>
 
 	<% if (typeof message !== 'undefined') { %>
 		<p style = "color:red;">
 		<%= message %>
 		</p>
 	<% } %>
-
+		<div class="page-header row">
+			<div class="col-xs-offset-2 col-xs-8 col-sm-offset-1">
+  			<h3>OrganicFoodBuddy</h3>
+  		</div>
+		</div>
 	<br>
-		<form action="/login" method = "post">
-
-			<p>
-				<label for="user">Username:</label> <input type="text" name="username" id="user" autofocus value = <%=username %>>
-			</p>
-			<p>
-				<label for="pass">Password:</label> <input type="password" name="password" id="pass">
-			</p>
-			<p>
-				<input type="submit" value="Log In" class ="btn btn-primary ">
-			</p>
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+		<h1> Login</h1>
+		<form role="form" action="/login" method = "post">
+			<div class="form-group">
+				<input type="text" name="username" id="username" autofocus class="form-control big" value="<%=username %>" placeholder="username">
+			</div>
+			<div class="form-group">
+			<input type="password" class="form-control big" name="password" id="password" placeholder="password">
+			</div>
+			<div class="form-group">
+			<input type="submit" value="Login" class="btn btn-primary btn-lg btn-cust">
+			</div>
+			Don't have an account?
+			<a href="/signup"> Sign up here</a>
 		</form>
-		Don't have an account?<a href="/signup">Create one here</a>
+	</div>
+</div>
 	</body>
 	</html>

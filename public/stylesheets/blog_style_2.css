@@ -1,0 +1,27 @@
+body {
+  /*background: url(http://wallpoper.com/images/00/44/23/07/sprout-vector-art_00442307.jpg);*/
+  background-color: green;
+}
+/*h2 {
+  text-align: center;
+  color: black;
+  font-family: Lucida;
+  font-style: italic;
+}*/
+body {
+color:#ECF0F1;
+background-color: #52B3D9;
+font-family: 'Open Sans', sans-serif;
+}
+h1 {
+	padding: 20px;
+	font-size: 17.5px;
+}
+ul {
+	border-radius: 1px;
+	width: 100%;
+	padding: 10px;
+	font-size: 25px;
+	background-color:#4183D7;
+	
+}

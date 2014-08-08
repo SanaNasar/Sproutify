@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
 <head>
 	<!-- Latest compiled and minified CSS -->
@@ -6,109 +7,144 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 
-	<meta charset="UTF-8">
-	<title>Food Guide</title>
+<!-- 	<meta charset="UTF-8">
+ -->	<title>Food Guide</title>
 </head>
 <style>
-#top {
-	margin-bottom: 20px;
+body {
+background: url(http://www.usabiaglut.com/wp-content/uploads/2014/04/strawberries.jpg);
 }
-.btn {
-	 margin-left: 60px;
+.grad1{
+   color: red;
+   font-size: 14px;
+   padding-left: 20px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+ 
+   }
+.grad2 {
+	color: orange;
+	font-size: 14px;
+	padding-left: 20px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
 }
-
-nav {
-	font-family: cursive;
-	text-align: center;
+.grad3 {
+	color: green;
+	font-size: 14px;
+	padding-left: 20px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
 }
 ul {
-	font-family: arial;
-	padding-top: 20px;
-	margin-left: 20px;
-	font-style: italic;
 	list-style-type: none;
+	padding-bottom: 100px;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 12px;
 }
-
-h1 {
-	font-family: cursive;
-	color: red;
-	text-align: center;
-}
-
-body {
-	background-image: url(http://www.usabiaglut.com/wp-content/uploads/2014/04/strawberries.jpg);
-	}
-
-.grad1 { 
-	border:3px grey; 
-	padding:10px;
-	background: red; 
-	width: 100px; 
-	box-shadow: 4px 4px 4px grey;
+#square1 {
+	width: 25px;
+	height: 25px;
+	background: red;
+	padding-right: 20px;
 	display: inline;
-	margin-right: 280px;
 }
-
-.grad2{
-	border:3px grey; 
-	padding:10px; 
-	background: orange; 
-	width: 100px; 
-	box-shadow: 4px 4px 4px grey;
-  display: inline;
-  margin-right: 280px;
-  }
-
-.grad3{
-  border:3px grey; 
-	padding:10px; 
-	background: green; 
-	width: 100px; 
-	box-shadow: 4px 4px 4px grey;
-  display: inline;
-  margin-right: 10px;
-  }
-
+#square2 {
+	width: 25px;
+	height: 25px;
+	background: orange;
+	padding-right: 20px;
+	display: inline;
+}
+#square3 {
+	width: 25px;
+	height: 25px;
+	background: green;
+	padding-right: 20px;
+	display: inline;
+}
 </style>
-
 <body>
+ <div class="container container-fluid">
+	
 	<div id= "top">
 		<h1><u>Food Guide</u></h1>
 	</div>
- 
- 	<nav>
-	
- 
- 	<div class="grad1">Buy Organic</div>
-	<div class="grad2">Use Caution</div>
-	<div class="grad3">Inorganic Safe</div>
-	</nav>
-	 
-	<div class="col1">
-  	<ul id="red">
-   		<div class="col-md-4"><a href="apple">Apples</a></div>
-   		<div class="col-md-4"><a href="apricot.html">Apricots</a></div>
- 		  <div class="col-md-4"><a href="pepper">Bell pepper</a></div>
- 		  <div class="col-md-4"><a href="blueberry.html">Blueberries</a></div>
- 		  <div class="col-md-4"><a href="carrot.html">Carrots</a></div>
- 		  <div class="col-md-4"><a href="celery.html">Celery</a></div>
- 		  <div class="col-md-4"><a href="cherry.html">Cherry</a></div>
- 		  <div class="col-md-4"><a href="grapes.html">Grapes</a></div>
- 		  <div class="col-md-4"><a href="kale.html">Kale</a></div>
- 		  <div class="col-md-4"><a href="lime.html">Lemons and Lime</a></div>
- 		  <div class="col-md-4"><a href="potato.html">Potato</a></div>
- 		  <div class="col-md-4"><a href="radish.html">Radish</a></div>
- 		  <div class="col-md-4"><a href="beet.html">Red Beet</a></div>
- 		  <div class="col-md-4"><a href="spinach.html">Spinach</a></div>
- 		  <div class="col-md-4"><a href="strawberry.html">Strawberry</a></div>
-		</ul>
-	</div>
+  	<div class="row">
+	    
+	    <div class="col-sm-4">
+		    <div class="grad1">Buy Organic</div>
+		    	<div id = "square1">
+		    	</div>
+
+		      <ul id="red">
+		        <li><a href="apple">Apples</a></li>
+		        <li><a href="apricot">Apricots</a></li>
+		        <li><a href="pepper">Bell pepper</a></li>
+		        <li><a href="blueberry">Blueberries</a></li>
+		        <li><a href="carrot">Carrots</a></li>
+		        <li><a href="celery">Celery</a></li>
+		        <li><a href="cherry">Cherry</a></li>
+		        <li><a href="grapes">Grapes</a></li>
+		        <li><a href="kale">Kale</a></li>
+		        <li><a href="lime">Lemons and Lime</a></li>
+		        <li><a href="potato">Potato</a></li>
+		        <li><a href="radish">Radish</a></li>
+		        <li><a href="beet">Red Beet</a></li>
+		        <li><a href="spinach">Spinach</a></li>
+		        <li><a href="strawberry">Strawberry</a></li>
+		      </ul>
+
+	    </div>
+
+	    <div class="col-sm-4">
+	    	<div class="grad2">Use Caution</div>
+	    	<div id = "square2">
+		    </div>
+		 
+
+	    	<ul id="yellow">
+		        <li><a href="bannana">Bannana</a></li>
+		        <li><a href="blackberry">Blackberry</a></li>
+		        <li><a href="broccoli">Broccoli</a></li>
+		        <li><a href="brusselsrpouts">Broussel Sprouts</a></li>
+		        <li><a href="cantaloupe">Cantaloupe</a></li>
+		        <li><a href="cauliflower">Cauliflower</a></li>
+		        <li><a href="cranberries">Cranberries</a></li>
+		        <li><a href="cucumber">Cucumber</a></li>
+		        <li><a href="figs">Figs</a></li>
+		        <li><a href="beans">Green Beans</a></li>
+		        <li><a href="orange">Orange</a></li>
+		        <li><a href="papayas">Papaya</a></li>
+		        <li><a href="plum">Plum</a></li>
+		        <li><a href="rasberry">Rasberry</a></li>
+		        <li><a href="squash">Squash</a></li>
+		        <li><a href="tomato">Tomato</a></li>
+		      </ul>
+
+	    </div>
+
+	    <div class="col-sm-4">
+	    	<div class="grad3">Inorganic Safe</div>
+	     		<div id = "square3">
+		    	</div>
+
+	    	<ul id="green">
+		        <li><a href="avacado">Avacados</a></li>
+		        <li><a href="onion">Onion</a></li>
+		        <li><a href="peas">Peas</a></li>
+		        <li><a href="pineapple">Pineapples</a></li>
+		        <li><a href="potatos">Sweet Potatoes</a></li>
+		    </ul>
+
+	    </div>
+
+  </div> <!-- row -->
 
 
 <div>
 	<a href="home" class="btn btn-success">Go Home</a>
+	<a href="recipe" class="btn btn-success">Search Recipes</a>
 </div>
 
-</div>
+</div> <!-- container-->
 </body>
 </html>

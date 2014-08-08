@@ -3,9 +3,6 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-
 	<meta charset="UTF-8">
 	<title>Apples</title>
 </head>
@@ -18,25 +15,36 @@ font-style: italic;
 }
 article {
 	font-family: lucida handwriting;
-	font-size: medium;
+	font-size: 20px;
+	float: right;
+}
+body {
+	background-color: lightgreen;
 }
 </style>
 <body>
+	<!-- header 1 -->
 <ul class="nav nav-pills">
   <li class="active"><a href="home">Home</a></li>
   <li><a href="recipe">Recipes</a></li>
   <li><a href="guide">Guide</a></li>
 </ul>
+	<!-- header 2 -->
+<ol class="breadcrumb">
+  <li><a href="home">Home</a></li>
+  <li><a href="recipe">RecipeSearch</a></li>
+  <li class="active" a href="guide">Guide</li>
+</ol>
 <h1><u>Apples</u></h1>
 <p><img src="http://www.fruitsandveggiesmorematters.org/wp-content/uploads/UserFiles/Image/cooking/good/nutrition/fvdb/apples.jpg">
 <img src="http://www.fruitsandveggiesmorematters.org/wp-content/uploads/UserFiles/Image/cooking/good/nutrition/fvdb/labels/apple.gif">
 </p>
 
 <article>
-   <p><a href="http://www.wholefoodsmarket.com/"><u><strong>Buy Organic:</a></strong></u>Apples are highly pesticide contaminated and contain organo-phosphorous and organo-chloride pesticides such ad DDT and permethrin</p>
+   <p class= "text-info"><a href="http://www.wholefoodsmarket.com/"><u><strong>Buy Organic:</a></strong></u>Apples are highly pesticide contaminated and contain organo-phosphorous and organo-chloride pesticides such ad DDT and permethrin</p>
    <!-- aside inside article -->
-   <aside><strong>Prep:</strong>Apples are healthiest when eaten with the skin so they must be fully washed. To wash put the fruit in water for 50 sec while gently but throughly scrubbing the apple all over its surface</p>
-        
+   <aside><p class="text-info"><strong>Prep:</strong>Apples are healthiest when eaten with the skin so they must be fully washed. To wash put the fruit in water for 50 sec while gently but throughly scrubbing the apple all over its surface</p>
+     
    </aside>
 </article>
 </body>

@@ -4,10 +4,8 @@
   <head>
     <title>Recipe Search Results</title>
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
     <style>
-    body {
-      background: url();
-    }
     h2 {
       text-align: center;
       padding-top: 20px;
@@ -27,9 +25,8 @@
       padding-left: 300px;
     }
     img {
-      text-align: center;
-       width: 400px; height: 200px; border:2px solid #fff;
-        box-shadow: 10px 10px 5px #ccc; -moz-box-shadow: 10px 10px 5px #ccc; -webkit-box-shadow: 10px 10px 5px #ccc; -khtml-box-shadow: 10px 10px 5px #ccc;
+      position: center;
+      width: 10em;
     }
     a:hover
       {
@@ -43,6 +40,12 @@
   </head>
   <body>
     <h2>Recipe info page!</h2>
+
+    <form method="post" action="/myfavorites">
+      <input type="hidden" name="recipe" value="">
+      <input type="hidden" name="link" value="">
+      <p><a href="myfav" class="btn btn-success btn-sm pinkbutton">Add to My Fav</a></p>
+
     <h3><%= stuff.name %></h3>
     <img src="<%= stuff.images[0].hostedMediumUrl %>">
     
@@ -67,11 +70,7 @@
     </div>
   <% }) %>
   
-    <form method="post" action="/">
-      <input type="hidden" name="recipe" value="">
-      <input type="hidden" name="link" value="">
-      <input type ="submit" value = "Save it to my list!">
-    </form>
+ 
       
 
 </body>

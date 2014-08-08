@@ -21,6 +21,8 @@ app.use(methodOvrride());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
 
+var savedList = [];
+
 app.use(cookieSession({
   secret: 'thisismysecretkey',
   name: 'cookie created by Sana',
@@ -55,6 +57,12 @@ app.get("/home", function(req, res){
   res.render('home');
 });
 
+//Directs to the contacts page
+app.get("/contact", function(req, res){
+  res.render('contact');
+});
+
+
 //Directs to the foodguide page
 app.get("/guide", function(req, res){
   res.render('guide');
@@ -72,16 +80,12 @@ app.get("/recipe", function(req, res){
 //Directs to the recipe results page using form action
 app.get('/search', function(req, res){
   var query = req.query.searchTerm;
-  // var query2 = req.query.searchTerm2; //query refers to the parameter
-
-  var url = "http://api.yummly.com/v1/api/recipes?_app_id=45544c9f&_app_key=0e5a56d6a381ffed4b077f1f8d70df46&q=" + query +"&requirePictures=true" ;
+  var url = "http://api.yummly.com/v1/api/recipes?_app_id=45544c9f&_app_key=" + process.env.YUMMLY_API_KEY + "&q=" + query +"&requirePictures=true" ;
   request(url, function (error, response, body) {
     if (!error) {
-    var data = JSON.parse(body); //Coverting JSON data into javascript
-        console.log(data.matches);
-
-    res.render('results', {recipeList: data.matches || [] });
-
+      var data = JSON.parse(body); //Coverting JSON data into javascript
+      console.log(data.matches);
+      res.render('results', {recipeList: data.matches || [] });
     }
   });
 });
@@ -89,7 +93,7 @@ app.get('/search', function(req, res){
 //Directs to the recipe with id
 app.get('/search/:id', function(req, res){
   var recipeID = req.params.id;
-  var url = "http://api.yummly.com/v1/api/recipe/" + recipeID +"?_app_id=45544c9f&_app_key=0e5a56d6a381ffed4b077f1f8d70df46&requirePictures=true" ;
+  var url = "http://api.yummly.com/v1/api/recipe/" + recipeID +"?_app_id=45544c9f&_app_key=" + process.env.YUMMLY_API_KEY + "&requirePictures=true" ;
   request(url, function (error, response, body) {
     if (!error) {
       
@@ -101,14 +105,33 @@ app.get('/search/:id', function(req, res){
 
     });
   });
+
+//Directs to the myfavorites page
+// app.get("/myfavorites", function(req, res){
+//   // get access to the user
+//   // get access to the food
+//   // save the food as a favorite of the user
+//   res.render('myfav', {savedList: []});
+// });
+
+
+
 //Directs to the apple page
 app.get("/apple", function(req, res){
   res.render('apple');
 });
+//Directs to the bannana page
+app.get("/bannana", function(req, res){
+  res.render('bannana');
+});
+//Directs to the apple page
+app.get("/blackberry", function(req, res){
+  res.render('blackberry');
+});
 
 //Directs to the new post page
 app.get("/blog", function(req, res){
-  console.log(req.user)
+  console.log(req.user);
   res.render('blog');
 });
 

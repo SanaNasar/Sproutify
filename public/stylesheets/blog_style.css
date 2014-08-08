@@ -1,0 +1,41 @@
+body {
+  /*background: url(http://wallpoper.com/images/00/44/23/07/sprout-vector-art_00442307.jpg);*/
+  background-color: green;
+}
+/*h2 {
+  text-align: center;
+  color: black;
+  font-family: Lucida;
+  font-style: italic;
+}*/
+.button {
+ position: center;
+}
+body {
+color:#ECF0F1;
+background-color: #1BA39C;
+font-family: 'Open Sans', sans-serif;
+}
+a {
+ color: #1F3A93;
+}
+textarea {
+  position: center;
+}
+.big {
+	padding: 20px;
+	font-size: 17.5px;
+}
+.btn-cust {
+	border-radius: 1px;
+	width: 100%;
+	padding: 10px;
+	font-size: 25px;
+	background-color:#4183D7;
+	
+}
+
+.btn-cust:hover {
+	background-color: #DADFE1;
+	color:#4183D7;
+}
