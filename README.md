@@ -29,4 +29,4 @@ I always find myself [Google](https://www.google.com) a lot to find healthier op
 	* Yummuly API (for recipe search)
 	* Postgres DB
 
-## Find it here: 
+## Find it here:
