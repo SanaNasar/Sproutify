@@ -30,3 +30,11 @@ I always find myself [Google](https://www.google.com) a lot to find healthier op
 	* Postgres DB
 
 ## Find it here:
+
+## What's next?
+
+* I would like to add a favorites feature, where user can favorite their recipes and have a personalized list of their own.
+* I would use oAuth and allow the users to login with their twitter account.
+* I would add like to put more features using google maps api where the user can search for healthy options to eat around them.
+
+## Thanks!
